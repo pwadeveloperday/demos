@@ -1,0 +1,48 @@
+{
+  "name": "pwadevdaydemos",
+  "version": "0.0.1",
+  "description": "中国 PWA 开发者日示例",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --open --host",
+    "dev-task": "vite",
+    "build": "vite build",
+    "start": "npm run build && vite preview --host",
+    "start-remote": "vite --host",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pixi/filter-kawase-blur": "^4.1.5",
+    "@pwabuilder/pwainstall": "^1.6.7",
+    "@types/debounce": "^1.2.1",
+    "@types/hsl-to-hex": "^1.0.0",
+    "@vaadin/router": "^1.7.4",
+    "debounce": "^1.2.1",
+    "hsl-to-hex": "^1.0.0",
+    "lit": "^2.2.5",
+    "lit-video": "^1.0.0",
+    "pixi.js": "^6.4.2",
+    "simplex-noise": "^3.0.1",
+    "workbox-build": "^6.5.3",
+    "workbox-core": "^6.5.3",
+    "workbox-precaching": "^6.5.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "typescript": "^4.7.2",
+    "vite": "^2.9.9",
+    "vite-plugin-pwa": "^0.12.0"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "quoteProps": "consistent",
+    "trailingComma": "es5",
+    "endOfLine": "crlf",
+    "bracketSpacing": true
+  }
+}

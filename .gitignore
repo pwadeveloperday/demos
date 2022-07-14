@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+dist
+dev-dist
+build
+.idea
+.github
+
+.cert/cert.pem
+.cert/key.pem
