@@ -19,7 +19,8 @@ export class SampleUPH extends LitElement {
       `;
       // ?pwadev=web%2Bpwadev%3A%2F%2F----%2F
       let address = param.replace('?pwadev=web%2Bpwadev%3A%2F%2F', '');
-      address = address.slice(0, -2);
+      address = address.slice(0, -3);
+      address = decodeURI(address);
       console.log(address);
       console.log(`https://restapi.amap.com/v3/geocode/geo?address=${address}&output=JSON&key=39a5a5f5239a28b739e6a79381afb97e`);
       const res = await fetch(`https://restapi.amap.com/v3/geocode/geo?address=${address}&output=JSON&key=39a5a5f5239a28b739e6a79381afb97e`);
