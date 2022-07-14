@@ -31,7 +31,7 @@ export class SampleUPH extends LitElement {
       let location = geocodes[0].location;
       this._geolocation.innerHTML = '经纬度：' + location;
       const response = await fetch(`https://restapi.amap.com/v3/staticmap?location=${location}&zoom=10&size=375*250&markers=mid,,A:${location}&key=39a5a5f5239a28b739e6a79381afb97e`);
-      let blob = response.blob();
+      let blob = await response.blob();
       const imageObjectURL = URL.createObjectURL(blob);
       this._map.innerHTML = `<img src="${imageObjectURL}">`;
     } else {
