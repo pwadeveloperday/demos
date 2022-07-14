@@ -20,9 +20,13 @@ export class SampleUPH extends LitElement {
       // ?pwadev=web%2Bpwadev%3A%2F%2F----%2F
       let address = param.replace('?pwadev=web%2Bpwadev%3A%2F%2F', '');
       address = address.slice(0, -2);
+      console.log(address);
+      console.log(`https://restapi.amap.com/v3/geocode/geo?address=${address}&output=JSON&key=39a5a5f5239a28b739e6a79381afb97e`);
       const res = await fetch(`https://restapi.amap.com/v3/geocode/geo?address=${address}&output=JSON&key=39a5a5f5239a28b739e6a79381afb97e`);
       const json = await res.json();
+      console.log(json);
       let geocodes = json.geocodes;
+      console.log(geocodes);
       let location = geocodes[0].location;
       this._geolocation.innerHTML = location;
       const response = await fetch(`https://restapi.amap.com/v3/staticmap?location=${location}&zoom=10&size=375*250&markers=mid,,A:${location}&key=39a5a5f5239a28b739e6a79381afb97e`);

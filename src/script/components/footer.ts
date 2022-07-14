@@ -58,8 +58,9 @@ export class AppFooter extends LitElement {
       <footer>
         <div>&copy;2022 <a href="https://pwadev.io" title="中国 PWA 开发者日">中国 PWA 开发者日</a></div>
         <div class="suggest">
-        <a href="/code-of-conduct" appearance="primary" title="行为准则">行为准则</a>
-        <a href="/privacy" appearance="primary" title="隐私">隐私</a>
+          <a href="/code-of-conduct" appearance="primary" title="行为准则">行为准则</a>
+          <a href="/privacy" appearance="primary" title="隐私">隐私</a>
+          <a href="/about" appearance="primary" title="关于">关于</a>
         </div>
       </footer>
     `;
