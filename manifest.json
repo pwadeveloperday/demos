@@ -84,7 +84,7 @@
       "name": "本地视频播放器",
       "short_name": "Sample",
       "description": "打开本地视频播放器",
-      "url": "/sample",
+      "url": "/sample/media-player",
       "icons": [{ "src": "assets/icons/icon_192.png", "sizes": "192x192" }]
     }
   ]
