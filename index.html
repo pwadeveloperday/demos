@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>示例 - 中国 PWA 开发者日</title>
+
+  <base href="/" />
+  <meta name="viewport"
+    content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0" />
+  <meta name="description" content="示例 - 中国 PWA 开发者日" />
+  <meta name="keywords" content="China PWA Developer Day, 中国 PWA 开发者日, PWA, Progressive Web Apps, Progressive Web Applications, 渐进式网页应用, 渐进式 Web 应用">
+  <meta name="author" content="Belem Zhang">
+  <meta name="theme-color" content="#ffffff" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="示例 - 中国 PWA 开发者日" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <link rel="icon" href="/assets/icons/icon_32.png" type="image/x-icon" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <script type="module" src="https://unpkg.com/@fluentui/web-components" crossorigin="anonymous"></script>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QEPH34BB0N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QEPH34BB0N');
+  </script>
+  <script type="module" crossorigin src="/code/index.f3a83eb4.js"></script>
+  <link rel="stylesheet" href="/code/index.3116cb10.css">
+</head>
+
+<body>
+  <fluent-design-system-provider>
+    <app-index></app-index>
+  </fluent-design-system-provider>
+  <script>
+    const debounce = (func, wait) => {
+      let timeout;
+      return function executedFunction(...args) {
+        const later = () => {
+          clearTimeout(timeout);
+          func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+      };
+    };
+
+    if ('windowControlsOverlay' in navigator) {
+        document.documentElement.classList.toggle('has-control-overlay', navigator.windowControlsOverlay.visible);
+        navigator.windowControlsOverlay.addEventListener('geometrychange', debounce(e => {
+            // Detect if the Window Controls Overlay is visible.
+            document.documentElement.classList.toggle('has-control-overlay', navigator.windowControlsOverlay.visible);
+            const isOverlayVisible = navigator.windowControlsOverlay.visible;
+            // Get the size and position of the title bar area.
+            const titleBarRect = e.titlebarAreaRect;
+
+            console.log(`The overlay is ${isOverlayVisible ? 'visible' : 'hidden'}, the title bar width is ${titleBarRect.width}px`);
+        }, 200));
+    }
+
+    navigation.addEventListener('navigate', (event) => {
+      console.log(event.formData);
+      switch (event.destination.url) {
+        case 'https://web.dev/':
+          console.log("访问 web.dev");
+          break;
+        case 'https://github.io':
+          console.log("访问 github.io");
+          break;
+      }
+    });
+  </script>
+  
+</body>
+
+</html>
