@@ -280,9 +280,9 @@ export class SampleUPH extends LitElement {
         使用特定协议的链接调用已安装的 PWA，获得更集成的体验。<br><br>
         <fluent-card class="act">
           <ul>
-            <li>访问 <a href="https://pwadev.io">https://pwadev.io</a></li>
+            <li>访问 <a href="https://demos.pwadev.io">https://demos.pwadev.io</a></li>
             <li>安装为本地 PWA 应用</li>
-            <li>重启浏览器，访问 <a href="https://pwadev.io/sample/url-protocol-handler">https://pwadev.io/sample/url-protocol-handler</a> </li>
+            <li>重启浏览器，访问 <a href="https://demos.pwadev.io/sample/url-protocol-handler">https://demos.pwadev.io/sample/url-protocol-handler</a> </li>
             <li>点击 <a href="web+pwadev://北京市西城区景山西街44号" id="uph">web+pwadev://北京市西城区景山西街44号</a></li>
             <li>自动启动 "中国 PWA 开发者日"</li>
             <li>显示浏览器中查询的地址经纬度及地图</li>
