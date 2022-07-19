@@ -81,9 +81,9 @@
       "icons": [{ "src": "assets/icons/icon_192.png", "sizes": "192x192" }]
     },
     {
-      "name": "本地视频播放器",
-      "short_name": "Sample",
-      "description": "打开本地视频播放器",
+      "name": "本地媒体播放器",
+      "short_name": "Media Player",
+      "description": "打开本地媒体播放器",
       "url": "/sample/media-player",
       "icons": [{ "src": "assets/icons/icon_192.png", "sizes": "192x192" }]
     }
