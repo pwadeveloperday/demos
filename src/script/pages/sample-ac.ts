@@ -13,7 +13,7 @@ export class SampleAC extends LitElement {
 
   async _copy() {
     try {
-      const url = 'https://pwadev.io/assets/sample/pwa-fugu.png';
+      const url = 'https://demos.pwadev.io/assets/sample/pwa-fugu.png';
       const blobInput = await this._loadBlob(url);
       const clipboardItemInput = new ClipboardItem({'image/png' : blobInput});
       await navigator.clipboard.write([clipboardItemInput]);

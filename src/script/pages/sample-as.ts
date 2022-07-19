@@ -233,7 +233,7 @@ export class SampleAS extends LitElement {
         <fluent-card class="act">
         利用应用程序的快捷方式可快速访问用户经常需要的一些常见操作。
           <ul>
-            <li>访问 <a href="https://pwadev.io">https://pwadev.io</a></li>
+            <li>访问 <a href="https://demos.pwadev.io">https://demos.pwadev.io</a></li>
             <li>安装为本地 PWA 应用</li>
             <li>触发 PWA 应用 快捷方式</li>
           </ul>

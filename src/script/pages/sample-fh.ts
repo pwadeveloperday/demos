@@ -256,7 +256,7 @@ export class SampleFH extends LitElement {
             将“中国 PWA 开发者日”注册为默认图片查看器
             <ul>
               <li>浏览器启用 chrome://flags#file-handling-api</li>
-              <li>访问 <a href="https://pwadev.io">https://pwadev.io</a></li>
+              <li>访问 <a href="https://demos.pwadev.io">https://demos.pwadev.io</a></li>
               <li>安装为本地 PWA 应用</li>
               <li>右键点击电脑中的图片文件 (.png, .jpg, .jpeg)</li>
               <li>选择“打开方式” -&gt; 选择“中国 PWA 开发者日”</li>
