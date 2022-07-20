@@ -251,7 +251,7 @@ export class SampleNA extends LitElement {
           <fluent-breadcrumb-item href="/">首页</fluent-breadcrumb-item>
         </fluent-breadcrumb>
         <h2>导航 (Navigation) API</h2>
-        通过全新的 Navigation API 标准化客户端路由，彻底革新了单页应用程序（SPA）的构建。<br>
+        通过全新的 Navigation API 标准化客户端路由，彻底革新了单页应用程序（SPA）的构建。<br><br>
         <fluent-card class="act">
           <button @click="${this._na}">显示</button>
           <button @click="${this._naa}">访问第二个链接</button>

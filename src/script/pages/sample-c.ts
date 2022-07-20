@@ -247,8 +247,8 @@ export class SampleC extends LitElement {
           <fluent-breadcrumb-item href="/">首页</fluent-breadcrumb-item>
         </fluent-breadcrumb>
         <h2>联系人选取器 (Contact Picker) API</h2>
+        为网站提供一种请求用户联系人信息的方式<br><br>
         <fluent-card class="act">
-          为网站提供一种请求用户联系人信息的方式<br><br>
           <button @click="${this._c}">选择联系人</button>
           <div id="msg"></div>
         </fluent-card>

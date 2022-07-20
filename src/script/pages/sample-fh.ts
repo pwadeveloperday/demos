@@ -249,11 +249,11 @@ export class SampleFH extends LitElement {
           <fluent-breadcrumb-item href="/">首页</fluent-breadcrumb-item>
         </fluent-breadcrumb>
         <h2>文件处理 (File Handling) API</h2>
+        将“中国 PWA 开发者日”注册为默认图片查看器<br><br>
         <fluent-card class="act">
           <div id="show"></div>
           <div>
             <div id="msg"></div>
-            将“中国 PWA 开发者日”注册为默认图片查看器
             <ul>
               <li>浏览器启用 chrome://flags#file-handling-api</li>
               <li>访问 <a href="https://demos.pwadev.io">https://demos.pwadev.io</a></li>
