@@ -45,16 +45,14 @@
         "image/webp": [".webp"],
         "image/jpeg": [".jpeg", ".jpg"],
         "image/png": [".png"]
-      },
-      "launch_type": "single-client"
+      }
     },
     {
       "action": "/sample/media-player",
       "accept": {
         "video/*": [".mp4",".mkv",".webm",".3gp",".avi",".mpeg",".mpg",".ogg",".mp3",".wmv",".wav",".mov"],
         "audio/*": [".aac",".flac",".mp3",".wma",".wav",".midi"]
-      },
-      "launch_type": "single-client"
+      }
     }
   ],
   "screenshots": [
