@@ -1,5 +1,5 @@
 {
-  "id": "pwadevday",
+  "id": "pwadevdaydemos",
   "scope": "/",
   "name": "示例 - 中国 PWA 开发者日",
   "display": "standalone",
@@ -40,19 +40,12 @@
   }],
   "file_handlers": [
     {
-      "action": "/sample/file-handling",
-      "accept": {
-        "image/webp": [".webp"],
-        "image/jpeg": [".jpeg", ".jpg"],
-        "image/png": [".png"]
-      }
-    },
-    {
       "action": "/sample/media-player",
       "accept": {
-        "video/*": [".mp4",".mkv",".webm",".3gp",".avi",".mpeg",".mpg",".ogg",".mp3",".wmv",".wav",".mov"],
+        "video/*": [".mp4",".mkv",".webm",".3gp",".avi",".mpeg",".mpg",".ogg",".wmv",".mov"],
         "audio/*": [".aac",".flac",".mp3",".wma",".wav",".midi"]
-      }
+      },
+      "launch_type": "single-client"
     }
   ],
   "screenshots": [
