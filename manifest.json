@@ -40,6 +40,12 @@
   }],
   "file_handlers": [
     {
+      "action": "/sample/file-handling",
+      "accept": {
+        "image/png": [".png"]
+      }
+    },
+    {
       "action": "/sample/media-player",
       "accept": {
         "video/*": [".mp4",".mkv",".webm",".3gp",".avi",".mpeg",".mpg",".ogg",".wmv",".mov"],
