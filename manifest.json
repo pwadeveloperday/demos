@@ -34,13 +34,9 @@
       "type": "image/png"
     }
   ],
-  "protocol_handlers": [{
-    "protocol": "web+pwadev",
-    "url": "/sample/url-protocol-handler?pwadev=%s"
-  }],
   "file_handlers": [
     {
-      "action": "/sample/media-player",
+      "action": "/media-player",
       "accept": {
         "video/*": [".mp4",".mkv",".webm",".3gp",".avi",".mpeg",".mpg",".ogg",".mp3",".wmv",".wav",".mov"],
         "audio/*": [".mp4",".mkv",".webm",".3gp",".avi",".mpeg",".mpg",".ogg",".mp3",".wmv",".wav",".mov"]
@@ -48,6 +44,10 @@
       "launch_type": "single-client"
     }
   ],
+  "protocol_handlers": [{
+    "protocol": "web+pwadev",
+    "url": "/sample/url-protocol-handler?pwadev=%s"
+  }],
   "screenshots": [
     {
       "src": "assets/screenshots/screen.png",
