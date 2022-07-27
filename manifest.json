@@ -1,6 +1,6 @@
 {
   "id": "pwadevdaydemos",
-  "scope": "/sample",
+  "scope": "/",
   "name": "示例 - 中国 PWA 开发者日",
   "display": "standalone",
   "display_override": ["window-controls-overlay"],
@@ -40,12 +40,12 @@
   }],
   "file_handlers": [
     {
-      "action": "/sample/file-handling",
+      "action": "/sample/media-player",
       "accept": {
-          "image/*": [
-              ".png"
-          ]
-      }
+        "video/*": [".mp4",".mkv",".webm",".3gp",".avi",".mpeg",".mpg",".ogg",".mp3",".wmv",".wav",".mov"],
+        "audio/*": [".mp4",".mkv",".webm",".3gp",".avi",".mpeg",".mpg",".ogg",".mp3",".wmv",".wav",".mov"]
+      },
+      "launch_type": "single-client"
     }
   ],
   "screenshots": [
