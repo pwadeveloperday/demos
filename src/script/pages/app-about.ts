@@ -50,6 +50,27 @@ export class AppAbout extends LitElement {
     .spam {
       display: none;
     }
+
+    .wechat {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 16px;
+      grid-row-gap: 0px;
+      align-items: center;
+      justify-items: center;
+      margin: 16px auto;
+    }
+
+    .wechat div div:first-child, .wechat div div:first-child img {
+      height: 160px;
+      width: 160px;
+    }
+
+    .note {
+      margin: 8px auto;
+      text-align: center;
+      font-size: 12px;
+    }
     `;
   }
 
@@ -74,19 +95,28 @@ export class AppAbout extends LitElement {
           <p>主办方：
             <ul>
               <li>2021 年：英特尔 鼎道智联</li>
-              <li>2022 年：英特尔 微软</li>
+              <li>2022 年：英特尔 微软 谷歌</li>
             </ul>  
           </p>
           <p>2022 年主办方成员：
             <ul>
               <li>张敏 英特尔软件技术经理</li>
               <li>宋青见 微软首席产品经理</li>
+              <li>丛慧君 谷歌高级解决方案顾问</li>
             </ul>  
           </p>
           <p>联系我们: 
-          <ul>
+            <ul>
               <li>pwadeveloperday<span class="spam">spam</span>@<span class="spam">spam</span>outlook<span class="spam">spam</span>.com</li>
-            </ul>  
+            </ul> 
+            <div class="wechat">
+              <div>
+                <div>
+                  <img src="https://pwadev.io/assets/2022/wechat_admin_invite_t.png" alt="加此微信邀请入群">
+                </div>
+                <div class="note">邀请加入 PWA 开发者交流群</div>
+              </div>
+            </div> 
           </p>
           </fluent-card>
       </div>
