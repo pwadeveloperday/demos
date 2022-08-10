@@ -174,7 +174,7 @@ export class AppHome extends LitElement {
           </li>
           <li>
             🌐 🚧
-            WebGPU (Origin Trial: 94 to 105)
+            WebGPU (Origin Trial: 94 to 109)
           </li>
           <li>
             🐡 🚧
@@ -183,6 +183,9 @@ export class AppHome extends LitElement {
           <li>
             🌐 🚧
             Web 神经网络 (WebNN)
+          </li>
+          <li>
+            🌐 M79,104 Web 打包 (Web Bundles) API 
           </li>
         </ul>
       </fluent-card>
