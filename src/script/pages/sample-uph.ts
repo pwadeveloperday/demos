@@ -14,28 +14,29 @@ export class SampleUPH extends LitElement {
     const param = location.search;
     console.log(param);
     if(param.trim()) {
-      this._msg.innerHTML = `
-        search: ${param}, 成功调用
-      `;
-      // ?pwadev=web%2Bpwadev%3A%2F%2F----%2F
-      let address = param.replace('?pwadev=web%2Bpwadev%3A%2F%2F', '');
-      address = address.slice(0, -3);
-      address = decodeURI(address);
-      console.log(address);
-      console.log(`https://restapi.amap.com/v3/geocode/geo?address=${address}&output=JSON&key=39a5a5f5239a28b739e6a79381afb97e`);
-      const res = await fetch(`https://restapi.amap.com/v3/geocode/geo?address=${address}&output=JSON&key=39a5a5f5239a28b739e6a79381afb97e`);
-      const json = await res.json();
-      console.log(json);
-      let geocodes = json.geocodes;
-      console.log(geocodes);
-      let location = geocodes[0].location;
-      this._geolocation.innerHTML = '经纬度：' + location;
-      const response = await fetch(`https://restapi.amap.com/v3/staticmap?location=${location}&zoom=10&size=375*250&markers=mid,,A:${location}&key=39a5a5f5239a28b739e6a79381afb97e`);
-      let blob = await response.blob();
-      const imageObjectURL = URL.createObjectURL(blob);
-      this._map.innerHTML = `<img src="${imageObjectURL}">`;
+      // this._msg.innerHTML = `
+      //   search: ${param}, 成功调用
+      // `;
+      // // ?pwadev=web%2Bpwadev%3A%2F%2F----%2F
+      // let address = param.replace('?pwadev=web%2Bpwadev%3A%2F%2F', '');
+      // address = address.slice(0, -3);
+      // address = decodeURI(address);
+      // console.log(address);
+      // console.log(`https://restapi.amap.com/v3/geocode/geo?address=${address}&output=JSON&key=39a5a5f5239a28b739e6a79381afb97e`);
+      // const res = await fetch(`https://restapi.amap.com/v3/geocode/geo?address=${address}&output=JSON&key=39a5a5f5239a28b739e6a79381afb97e`);
+      // const json = await res.json();
+      // console.log(json);
+      // let geocodes = json.geocodes;
+      // console.log(geocodes);
+      // let location = geocodes[0].location;
+      // this._geolocation.innerHTML = '经纬度：' + location;
+      // const response = await fetch(`https://restapi.amap.com/v3/staticmap?location=${location}&zoom=10&size=375*250&markers=mid,,A:${location}&key=39a5a5f5239a28b739e6a79381afb97e`);
+      // let blob = await response.blob();
+      // const imageObjectURL = URL.createObjectURL(blob);
+      // this._map.innerHTML = `<img src="${imageObjectURL}">`;
+      this._msg.innerHTML = `高德地图免费调用量超限，暂停该演示`;
     } else {
-      this._msg.innerHTML = `无 web+pwadev://* 调用`;
+      this._msg.innerHTML = `无 web+pwadev://* 调用<br>高德地图免费调用量超限，暂停该演示`;
     }
   }
 
